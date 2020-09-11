@@ -11,7 +11,7 @@
         <table class="table table-bordered table-striped">
             <thead>
                 <tr>
-                    <th>@lang('Class')</th>
+                    <th>@lang('Class Number')</th>
                     <th>@lang('Course Name')</th>
                     <th>@lang('Course Type')</th>
                     <th>@lang('Course Time')</th>

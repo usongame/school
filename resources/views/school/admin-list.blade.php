@@ -18,7 +18,7 @@
             </ul>
         </div>
         <div class="col-md-10" id="main-container">
-            <h2>Admins</h2>
+            <h2>@lang('Admins')</h2>
             <div class="panel panel-default">
                 @if(count($admins) > 0)
                 <div class="panel-body">
@@ -26,12 +26,12 @@
                         <tr>
                             <th>@lang('Action')</th>
                             <th>@lang('Action')</th>
-                            <th>@lang('Name')</th>
-                            <th>@lang('Code')</th>
+                            <th>@lang('Full Name')</th>
+                            <th>@lang('User Code')</th>
                             <th>@lang('Email')</th>
                             <th>@lang('Phone Number')</th>
                             <th>@lang('Address')</th>
-                            <th>@lang('About')</th>
+                            <th>@lang('Description')</th>
                         </tr>
                         @foreach ($admins as $admin)
                         <tr>

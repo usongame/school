@@ -140,7 +140,7 @@
                         </div>
 
                         <div class="form-group{{ $errors->has('about') ? ' has-error' : '' }}">
-                            <label for="about" class="col-md-4 control-label">@lang('About')</label>
+                            <label for="about" class="col-md-4 control-label">@lang('Description')</label>
 
                             <div class="col-md-6">
                                 <textarea id="about" class="form-control" name="about">{{ $user->about }}</textarea>

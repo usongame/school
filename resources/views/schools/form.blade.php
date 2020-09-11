@@ -32,12 +32,9 @@
 
                         <div class="col-md-6">
                             <select id="medium" class="form-control" name="medium">
-                                <option selected="selected">@lang('Bangla')</option>
+                                <option selected="selected">@lang('Chinese')</option>
                                 <option>@lang('English')</option>
-                                <option>@lang('Hindi')</option>
-                                <option>@lang('Spanish')</option>
-                                <option>@lang('Chinese')</option>
-                                <option>@lang('Arabic')</option>
+                                <option>@lang('DoubleLanguage')</option>
                             </select>
 
                             @if ($errors->has('medium'))
@@ -63,10 +60,10 @@
                     </div>
 
                     <div class="form-group{{ $errors->has('about') ? ' has-error' : '' }}">
-                        <label for="about" class="col-md-4 control-label">@lang('About')</label>
+                        <label for="about" class="col-md-4 control-label">@lang('School About')</label>
 
                         <div class="col-md-6">
-                            <textarea id="about" class="form-control" rows="3" name="about" placeholder="@lang('About School')" required>{{ old('about') }}</textarea>
+                            <textarea id="about" class="form-control" rows="3" name="about" placeholder="@lang('School About')" required>{{ old('about') }}</textarea>
 
                             @if ($errors->has('about'))
                                 <span class="help-block">

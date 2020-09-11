@@ -10,13 +10,13 @@
             </div>
             <div class="col-md-10" id="main-container">
                 <div class="panel panel-default">
-                    <div class="page-panel-title">@lang('Academic Settings')</div>
+                    <div class="page-panel-title">@lang('System Settings')</div>
                     <div class="panel-body table-responsive">
                         <table class="table table-condensed">
                             <thead>
                                 <tr>
-                                    <th scope="col">@lang('Name')</th>
-                                    <th scope="col">@lang('Code')</th>
+                                    <th scope="col">@lang('School Name')</th>
+                                    <th scope="col">@lang('School Code')</th>
                                 </tr>
                                 <tr>
                                     <td>{{ $school->name }}</td>

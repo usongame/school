@@ -41,8 +41,8 @@
                                         <tr>
                                             <th>@lang('Section Name')</th>
                                             @if(isset($_GET['att']) && $_GET['att'] == 1)
-                                            <th>@lang('View Today\'s Attendance')</th>
-                                            <th>@lang('View Each Student\'s Attendance')</th>
+                                            <th>@lang('View Today Attendance')</th>
+                                            <th>@lang('View Each Student Attendance')</th>
                                             <th>@lang('Give Attendance')</th>
                                             @endif
                                             @if(isset($_GET['course']) && $_GET['course'] == 1)
@@ -63,12 +63,12 @@
                                                 @foreach ($exams as $ex)
                                                     @if ($ex->class_id == $class->id)
                                                         <td>
-                                                            <a role="button" class="btn btn-primary btn-xs" href="{{url('attendances/'.$section->id.'/0/'.$ex->exam_id)}}"><i class="material-icons">visibility</i> @lang('View Today\'s Attendance')</a>
+                                                            <a role="button" class="btn btn-primary btn-xs" href="{{url('attendances/'.$section->id.'/0/'.$ex->exam_id)}}"><i class="material-icons">visibility</i> @lang('View Today Attendance')</a>
                                                         </td>
                                                     @endif
                                                 @endforeach
                                             <td>
-                                                <a role="button" class="btn btn-danger btn-xs" href="{{url('attendances/'.$section->id)}}"><i class="material-icons">visibility</i> @lang('View Each Student\'s Attendance')</a>
+                                                <a role="button" class="btn btn-danger btn-xs" href="{{url('attendances/'.$section->id)}}"><i class="material-icons">visibility</i> @lang('View Each Student Attendance')</a>
                                             </td>
                                             <td>
                                                 <?php

@@ -53,7 +53,7 @@
     </ul>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ url('school/sections?course=1') }}"><i class="material-icons">class</i> <span class="nav-link-text">@lang('Classes &amp; Sections')</span></a>
+    <a class="nav-link" href="{{ url('school/sections?course=1') }}"><i class="material-icons">class</i> <span class="nav-link-text">@lang('Classes Sections')</span></a>
   </li>
   @endif
   @if(Auth::user()->role != 'student')
@@ -101,11 +101,11 @@
     <a class="nav-link" href="{{ url('academic/event') }}"><i class="material-icons">event</i> <span class="nav-link-text">@lang('Event')</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ url('academic/certificate') }}"><i class="material-icons">verified</i> <span class="nav-link-text">Certificate</span></a>
+    <a class="nav-link" href="{{ url('academic/certificate') }}"><i class="material-icons">verified</i> <span class="nav-link-text">@lang('Certificate')</span></a>
   </li>
   <li class="nav-item" style="border-bottom: 1px solid #dbd8d8;"></li>
   <li class="nav-item">
-    <a class="nav-link" href="{{ route('settings.index') }}"><i class="material-icons">settings</i> <span class="nav-link-text">@lang('Academic Settings')</span></a>
+    <a class="nav-link" href="{{ route('settings.index') }}"><i class="material-icons">settings</i> <span class="nav-link-text">@lang('System Settings')</span></a>
   </li>
   <li class="nav-item dropdown">
     <a role="button" href="#" class="nav-link" data-toggle="dropdown" aria-haspopup="true" aria-expanded="false"><i
@@ -202,7 +202,7 @@
     <a class="nav-link" href="{{url('stripe/receipts')}}"><i class="material-icons">receipt</i> <span class="nav-link-text">@lang('Receipt')</span></a>
   </li>
   <li class="nav-item">
-    <a class="nav-link" href="{{url('academic/student/certificates')}}"><i class="material-icons">verified</i> <span class="nav-link-text">Certificates</span></a>
+    <a class="nav-link" href="{{url('academic/student/certificates')}}"><i class="material-icons">verified</i> <span class="nav-link-text">@lang('Certificates')</span></a>
   </li>
   @endif
   {{--<div style="text-align:center;">@lang('Student')</div>--}}

@@ -25,11 +25,11 @@
                 </div>
 
                 <div class="form-group{{ $errors->has('about') ? ' has-error' : '' }}">
-                    <label for="about" class="col-md-4 control-label">@lang('About School')</label>
+                    <label for="about" class="col-md-4 control-label">@lang('School About')</label>
 
                     <div class="col-md-6">
                         <textarea id="about" type="text" class="form-control" name="about"
-                            placeholder="@lang('About School')" required>{{ $school->about }}</textarea>
+                            placeholder="@lang('School About')" required>{{ $school->about }}</textarea>
 
                         @if ($errors->has('about'))
                             <span class="help-block">

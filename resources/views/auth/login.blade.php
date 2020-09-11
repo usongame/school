@@ -24,6 +24,8 @@
                         {{ csrf_field() }}
 
                         <div class="form-group{{ $errors->has('email') ? ' has-error' : '' }}">
+                            <label>@lang('Demo Master Email')  |  @lang('Demo Master Password')</label>
+
                             <label for="email" class="col-md-4 control-label">@lang('E-Mail Or Phone Number')</label>
 
                             <div class="col-md-6">
